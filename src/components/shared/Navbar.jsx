@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { IoCartOutline } from "react-icons/io5";
+import { IoSearchSharp } from "react-icons/io5";
+
 
 const Navbar = () => {
     const navItems =[
@@ -34,12 +37,20 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-               <div>
-
+               <div className='flex items-center space-x-4'>
+                    {
+                        navItems.map((item)=>(
+                            <Link className='font-semibold text-primary duration-300'  href={item.path} key={item.path}>{item.title}</Link>
+                        ))
+                    }
                </div>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <div className='flex space-x-3 items-center'>
+                <IoCartOutline className='text-xl'/>
+                <IoSearchSharp className='text-xl'/>
+                <a className="btn btn-outline btn-primary px-8">Appointment</a>
+                </div>
             </div>
             </div>
        </div>

@@ -51,6 +51,7 @@ const Navbar = () => {
                 <IoSearchSharp className='text-xl'/>
                 <a className="btn btn-outline btn-primary px-8">Appointment</a>
                 </div>
+                <Link href="/login"> <button className='btn btn-primary mr-4'>Login</button></Link>
             </div>
             </div>
        </div>

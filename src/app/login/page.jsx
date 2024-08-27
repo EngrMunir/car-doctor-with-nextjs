@@ -11,7 +11,7 @@ import { useRouter } from 'next/navigation';
 
 
 const page = () => {
-    // const router = useRouter();
+    const router = useRouter();
 
     const handleLogin = async(event)=>{
         event.preventDefault();

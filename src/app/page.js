@@ -1,10 +1,10 @@
-import Image from "next/image";
+import HomePage from "@/components/HomePage/HomePage";
+import Navbar from "@/components/shared/Navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        Hello Car Doctor
-        <button className="btn btn-active btn-secondary">Secondary</button>
+    <main className="">
+       <HomePage />
     </main>
   );
 }
